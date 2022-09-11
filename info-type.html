@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <script type="text/javascript" src="Public/Scripts/filename.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <link rel="stylesheet" href="info-type.css">
     <link href='https://fonts.googleapis.com/css?family=Merriweather' rel='stylesheet'>
@@ -36,13 +37,12 @@
 
     <div class="signupdiv">
         <form id="signupform">
-            <h3 class="text-center">Schedule Setting Form</h3>
-            <input type="number" id="meal" placeholder="Your Meal *" required>
+            <h3 class="text-center">Meal Saving Form</h3>
+            <input type="number" id="phone-num" placeholder="Your Phone Number *" required>
             <select id = 'country'>
                 <option value="">Select your meal</option>
                 <option value="egg-salad">Egg Salad</option>
                 <option value="chicken-salad">Chicken Salad</option>
-                <option value="ham-salad">Ham Salad</option>
                 <option value="tuna-salad">Tuna Salad</option>
                 <option value="macaroni-salad">Macaroni Salad</option>
                 <option value="hot-dogs">Hot dogs</option>
@@ -68,8 +68,16 @@
                 <option value="pizza">Pizza</option>
                 <option value="chicken-nuggets">Chicken Nuggets</option>
             </select>
+            <script>
+                function findVals() {
+                    var phone = document.getElementById("phone-num");
+                    var ele = document.getElementById("country");
+                    var meal = ele.value;
+                }
+            </script>
+            <script src="send-sms.js"></script>
+            <button class = "submit" type="button" onclick="findVals()">No More Waste!</button>
         </form>
     </div>
-    <button class = "submit" type="button">No More Waste!</button>
 </div>
 </body>
