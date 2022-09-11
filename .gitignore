@@ -1,0 +1,17 @@
+node_modules/
+.expo/
+dist/
+npm-debug.*
+*.jks
+*.p8
+*.p12
+*.key
+*.mobileprovision
+*.orig.*
+web-build/
+
+TWILIO_ACCOUNT_SID=ACce4d2241b1b5b14ea73cd13ddb8a9592
+TWILIO_AUTH_TOKEN=00d346ce009150d5e327ba237a61ac52
+
+# macOS
+.DS_Store

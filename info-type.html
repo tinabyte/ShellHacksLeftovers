@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="info-type.css">
+    <link href='https://fonts.googleapis.com/css?family=Merriweather' rel='stylesheet'>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meal Info</title>
+</head>
+<body>
+
+    <div class="header">
+        <p>
+            <a href="home.html">
+                <img src="assets/leftoversLogo.png" alt="Logo" style= "width: 10%" >
+            </a>
+        </p>
+    </div>
+    
+    <div class="topnav">
+        <a href="contact.html">Contact</a>
+        <a href="impacts.html">Impacts of Food Waste</a>
+        <a href="info-type.html">Nutritional Information</a>
+        <a href="login.html" style="font-weight: bold; float: right;">Log in</a>
+    </div>
+    <div class="merriweatherFont"></div>
+    <div class="selection">
+        <div class="dropdown">
+            <button class="dropbtn">Dropdown</button>
+            <div class="dropdown-content">
+                <a href="#">Egg Salad</a>
+                <a href="#">Chicken Salad</a>
+                <a href="#">Ham Salad</a>
+                <a href="#">Tuna Salad</a>
+                <a href="#">Macaroni Salad</a>
+                <a href="#">Hot dogs</a>
+                <a href="#">Deli Meat</a>
+                <a href="#">Bacon</a>
+                <a href="#">Sausage</a>
+                <a href="#">Hamburger</a>
+                <a href="#">Ground Beef</a>
+                <a href="#">Turkey</a>
+                <a href="#">Chicken</a>
+                <a href="#">Veal</a>
+                <a href="#">Pork</a>
+                <a href="#">Lamb</a>
+                <a href="#">Steak</a>
+                <a href="#">Pork Chop</a>
+                <a href="#">Pot Roast</a>
+                <a href="#">Ham</a>
+                <a href="#">Fish</a>
+                <a href="#">Crab</a>
+                <a href="#">Lobster</a>
+                <a href="#">Hard-boiled Eggs</a>
+                <a href="#">Soup</a>
+                <a href="#">Pizza</a>
+                <a href="#">Chicken Nuggets</a>
+            </div>
+          </div>
+        <script>
+            function myFunction(){
+                document.getElementById("myDropdown").classList.toggle("show");
+            }
+            function filterFunction() {
+                var input, filter, ul, li, a, i;
+                input = document.getElementById("myInput");
+                filter = input.value.toUpperCase();
+                div = document.getElementById("myDropdown");
+                a = div.getElementsByTagName("a");
+                for (i = 0; i < a.length; i++) {
+                    txtValue = a[i].textContent || a[i].innerText;
+                    if (txtValue.toUpperCase().indexOf(filter) > -1) {
+                        a[i].style.display = "";
+                    } else {
+                        a[i].style.display = "none";
+                    }
+                }
+            }
+        </script>
+        <div class="input">
+            <form>
+                <label for="phone-num">Phone number:</label><br>
+                <input type="text" id="phone-num" value="">
+            </form>
+        </div>
+        <button class = "submit" type="button">No More Waste!</button>
+</div>
+</body>
