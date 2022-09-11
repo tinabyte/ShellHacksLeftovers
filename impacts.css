@@ -27,3 +27,15 @@ h1 {
     font-size: 40px;
     font-family: merriweather, sans-serif;
 }
+
+li {
+    font-weight: bold;
+    color: darkcyan;
+}
+
+strong {
+    font-size: 30px;
+    font-weight: bolder;
+    color: blue;
+    padding: 5px;
+}
