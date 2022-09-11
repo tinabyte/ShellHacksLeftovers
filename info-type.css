@@ -16,7 +16,7 @@ body{
 }
 
 .header {
-  background-color: #f1f1f1;
+  background-color: #ede5cc;
   padding: 10px;
   text-align: center;
 }
@@ -59,20 +59,8 @@ body{
   padding: 10px;
 }
 
-.label {
- font-size: 22px;
-}
-
-.submit {
-  color: white;
-  background-color: #1899D6;
-  border: none;
-  border-radius: 60px;
-  box-shadow: 0 3px 6px 0 rgb(37 44 97 / 15%), 0 1px 3px 0 rgb(93 100 148 / 20%);
-}
-
 body{
-  background: #eee;
+  background: #ede5cc;
 }
 
 .signupdiv{
@@ -82,9 +70,12 @@ body{
   border-radius: 7px;
   text-align: center;
   width: 35%;
+  position: absolute;
+  top: 66%;
+  left: 33%;
+  transform: translateY(-50%);
   display: block;
   margin: auto;
-  margin-top: 100px;
 }
 
 #signupform{
@@ -112,6 +103,7 @@ button{
   border: none;
   border-radius: 5px;
   color: #fff;
+  margin-top: 5px;
 }
 
 .label {
@@ -124,4 +116,5 @@ button{
   border: none;
   border-radius: 60px;
   box-shadow: 0 3px 6px 0 rgb(37 44 97 / 15%), 0 1px 3px 0 rgb(93 100 148 / 20%);
+  margin-bottom: 5%;
 }
