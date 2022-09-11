@@ -2,10 +2,19 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <link rel="stylesheet" href="info-type.css">
     <link href='https://fonts.googleapis.com/css?family=Merriweather' rel='stylesheet'>
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css" rel="stylesheet" />
+    <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
+    <script>
+        $(function(){
+         $("#country").select2();
+        }); 
+    </script>
     <title>Meal Info</title>
 </head>
 <body>
@@ -24,66 +33,43 @@
         <a href="info-type.html">Nutritional Information</a>
         <a href="login.html" style="font-weight: bold; float: right;">Log in</a>
     </div>
-    <div class="merriweatherFont"></div>
-    <div class="selection">
-        <div class="dropdown">
-            <button class="dropbtn">Dropdown</button>
-            <div class="dropdown-content">
-                <a href="#">Egg Salad</a>
-                <a href="#">Chicken Salad</a>
-                <a href="#">Ham Salad</a>
-                <a href="#">Tuna Salad</a>
-                <a href="#">Macaroni Salad</a>
-                <a href="#">Hot dogs</a>
-                <a href="#">Deli Meat</a>
-                <a href="#">Bacon</a>
-                <a href="#">Sausage</a>
-                <a href="#">Hamburger</a>
-                <a href="#">Ground Beef</a>
-                <a href="#">Turkey</a>
-                <a href="#">Chicken</a>
-                <a href="#">Veal</a>
-                <a href="#">Pork</a>
-                <a href="#">Lamb</a>
-                <a href="#">Steak</a>
-                <a href="#">Pork Chop</a>
-                <a href="#">Pot Roast</a>
-                <a href="#">Ham</a>
-                <a href="#">Fish</a>
-                <a href="#">Crab</a>
-                <a href="#">Lobster</a>
-                <a href="#">Hard-boiled Eggs</a>
-                <a href="#">Soup</a>
-                <a href="#">Pizza</a>
-                <a href="#">Chicken Nuggets</a>
-            </div>
-          </div>
-        <script>
-            function myFunction(){
-                document.getElementById("myDropdown").classList.toggle("show");
-            }
-            function filterFunction() {
-                var input, filter, ul, li, a, i;
-                input = document.getElementById("myInput");
-                filter = input.value.toUpperCase();
-                div = document.getElementById("myDropdown");
-                a = div.getElementsByTagName("a");
-                for (i = 0; i < a.length; i++) {
-                    txtValue = a[i].textContent || a[i].innerText;
-                    if (txtValue.toUpperCase().indexOf(filter) > -1) {
-                        a[i].style.display = "";
-                    } else {
-                        a[i].style.display = "none";
-                    }
-                }
-            }
-        </script>
-        <div class="input">
-            <form>
-                <label for="phone-num">Phone number:</label><br>
-                <input type="text" id="phone-num" value="">
-            </form>
-        </div>
-        <button class = "submit" type="button">No More Waste!</button>
+
+    <div class="signupdiv">
+        <form id="signupform">
+            <h3 class="text-center">Schedule Setting Form</h3>
+            <input type="number" id="meal" placeholder="Your Meal *" required>
+            <select id = 'country'>
+                <option value="">Select your meal</option>
+                <option value="egg-salad">Egg Salad</option>
+                <option value="chicken-salad">Chicken Salad</option>
+                <option value="ham-salad">Ham Salad</option>
+                <option value="tuna-salad">Tuna Salad</option>
+                <option value="macaroni-salad">Macaroni Salad</option>
+                <option value="hot-dogs">Hot dogs</option>
+                <option value="deli-meat">Deli Meat</option>
+                <option value="bacon">Bacon</option>
+                <option value="sausage">Sausage</option>
+                <option value="hamburger">Hamburger</option>
+                <option value="ground-beef">Ground Beef</option>
+                <option value="turkey">Turkey</option>
+                <option value="chicken">Chicken</option>
+                <option value="veal">Veal</option>
+                <option value="pork">Pork</option>
+                <option value="lamb">Lamb</option>
+                <option value="steak">Steak</option>
+                <option value="pork-chop">Pork Chop</option>
+                <option value="pot-roast">Pot Roast</option>
+                <option value="ham">Ham</option>
+                <option value="fish">Fish</option>
+                <option value="crab">Crab</option>
+                <option value="lobster">Lobster</option>
+                <option value="hard-boiled-eggs">Hard-boiled Eggs</option>
+                <option value="soup">Soup</option>
+                <option value="pizza">Pizza</option>
+                <option value="chicken-nuggets">Chicken Nuggets</option>
+            </select>
+        </form>
+    </div>
+    <button class = "submit" type="button">No More Waste!</button>
 </div>
 </body>
